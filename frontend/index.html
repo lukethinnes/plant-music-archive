@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <script defer src="app.js"></script>
+    <title>Plant Music</title>
+</head>
+<body>
+    <h1>Plant Music Archive</h1>
+    <img src="https://1.bp.blogspot.com/-iJaW32hDEO4/XRzsp1KMyTI/AAAAAAAAAm4/2L8qPlvAVZQCVB_OQyM3OQfGPHnF-syFgCLcBGAs/s1600/Booklet%2BInlay.jpg" id="plant-image" alt="image">
+    <div id="add-album">
+        <form method="POST" action="http://localhost:9000/albums/">
+        <input name="title" placeholder="title" type="text">
+        <input name="artist" placeholder="artist" type="text">
+        <select name="genre_id" id="genre-form">
+        </select>
+        <input type="submit">
+        </form>
+    </div>
+    <div id="display-albums">
+
+    </div>
+</body>
+</html>
